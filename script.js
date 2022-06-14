@@ -15,6 +15,9 @@
   })
 
 cw1.addEventListener("click", function () {
+
+    answer.innerHTML = "<h1>ladowanie stronu.</h1>";
+  
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(function (dane){
